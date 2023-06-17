@@ -1,19 +1,19 @@
-const { Users } = require('../models/Users');
+const { User } = require('../models/User');
 
 const resolvers = {
     Query: {
         viewUsers: async () => {
-            return await Users.find();
+            return await User.find();
         }
     }, 
 
-    // Mutation: {
-    //     addUsers: async (_, args) => {
-    //         const users = await Users.create(args);
+    Mutation: {
+        addUser: async (_, args) => {
+            const user = await User.create(args);
 
-    //         return users;
-    //     }
-    // }
+            return user;
+        }
+    }
 };
 
 module.exports = resolvers;
