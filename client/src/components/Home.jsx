@@ -1,4 +1,4 @@
-import { VIEW_USERS } from '../queries';
+import { VIEW_USERS } from '../utils/queries';
 import { useQuery } from '@apollo/client';
 
 // Component
