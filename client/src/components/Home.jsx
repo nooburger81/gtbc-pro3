@@ -3,9 +3,22 @@ import { useQuery } from '@apollo/client';
 
 
 const Home = () => {
+    const { loading, data } = useQuery(VIEW_PLAYERS);
+    const players = data?.viewPlayers || [];
     return (
         <div>
-            This is the home page!
+            {loading ?
+            <h1>Loading...</h1>
+        : <div>
+            {players.map((player, i) => {
+                return (
+                    <div key={i}>
+                        {player.email}
+                    </div>
+                )
+            })}
+        </div>
+        }
         </div>
     )
 }

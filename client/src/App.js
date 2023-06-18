@@ -7,7 +7,7 @@ import MyQuizzes from './components/MyQuizzes';
 import QuizBox from './components/QuizBox';
 
 const client = new ApolloClient({
-  uri: 'http://localhost:3005/graphql',
+  uri: '/graphql',
   cache: new InMemoryCache()
 })
 
