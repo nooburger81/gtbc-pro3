@@ -53,7 +53,7 @@ const QuizBox = () => {
     };
 
     return (
-    <div className='container'>
+    <div name='quiz' className='container'>
             <h1>Quiz Page</h1>
         <div>
             <h2>
