@@ -106,4 +106,4 @@ const QuizBox = () => {
     );
 };
 
-export default Page
+export default QuizBox
