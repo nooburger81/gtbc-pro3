@@ -1,6 +1,6 @@
-import Link from 'next/link';
+import { Link } from 'react-scroll';
 
-export default function Home() {
+export default function QuizBox() {
   return (
     <main>
       <div className='container'>

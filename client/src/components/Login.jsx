@@ -27,4 +27,4 @@ import Nuggies from '../assets/nuggies.png'
   )
 }
 
-export default Login3
+export default Login

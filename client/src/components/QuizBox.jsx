@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { quiz } from './data.js';
-import './page.css';
+import './quizBox.css';
 
 
-const Page = () => {
+const QuizBox = () => {
 
     const [activeQuestion, setActiveQuestion] = useState(0);
     const [selectedAnswer, setSelectedAnswer] = useState('');

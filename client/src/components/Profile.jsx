@@ -1,5 +1,5 @@
 import React from 'react'
-import Brandon from './assets/mexilovefood.webp'
+import Brandon from '../assets/mexilovefood.webp'
 
 const ProfileCard = () => {
   return (
