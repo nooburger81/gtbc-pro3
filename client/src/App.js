@@ -1,7 +1,9 @@
 import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 import Home from './components/Home';
 import Login from './components/Login';
-import Profile from './components/Profile';
+import BrandonProfile from './components/brandonProfile';
+import ColeProfile from './components/coleProfile';
+import RehmanProfile from './components/rehmanProfile';
 import MyQuizzes from './components/MyQuizzes';
 import QuizBox from './components/QuizBox';
 import RegisterForm from './components/RegisterForm';
@@ -18,13 +20,14 @@ function App() {
       <Home />
       <Login />
       <RegisterForm />
-      <Profile />
+      <BrandonProfile />
+      <ColeProfile />
+      <RehmanProfile />
       <MyQuizzes />
       <QuizBox /> 
       </div>
     </ApolloProvider>
 
-  );
-}
+  )};
 
 export default App;

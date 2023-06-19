@@ -19,7 +19,7 @@ export const quiz = {
         {
             id: 3,
             question: "What university did Jung graduate from?",
-            answers: ['Georgia Tech', 'Emory', '', 'MIT'],
+            answers: ['Georgia Tech', 'Emory', 'Juliard', 'MIT'],
             correctAnswer: 'Emory',
 		},
 
