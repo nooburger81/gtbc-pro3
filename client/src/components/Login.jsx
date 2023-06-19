@@ -15,7 +15,7 @@ import Nuggies from '../assets/nuggies.png'
                     <h2 className='text-6xl font-bold text-center mb-8  text-[#53e1b9]'>I Cannot Be Contained</h2>
                     <p className='text-3xl font-bold text-center mb-8'>Are You A Nuggie?</p>
                     <div>
-                        <input className='border p-2 m-2' type="text" placeholder='Username' />
+                        <input className='border p-2 m-2' type="email" placeholder='Email' />
                         <input className='border p-2' type="password" placeholder='Password' />
                     </div>
                     <Link to='profile' smooth={true} duration={500}>

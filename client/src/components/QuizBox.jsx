@@ -55,7 +55,7 @@ const QuizBox = () => {
     return (
         <div className='w-full h-screen flex'>
     <div name='quiz' className='container'>
-        <h1 className='text-9xl text-center animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent font-black'>Quiz Time</h1>
+        <h1 className='text-9xl pb-9 text-green-400 animate__animated animate__rollIn'>Quiz Time</h1>
         <div>
             {/* <h2>
                 Question: {activeQuestion + 1}
@@ -64,8 +64,8 @@ const QuizBox = () => {
         </div>
         <div>
             {!showResult ? (
-            <div className='quiz-container'>
-                <h3>{questions[activeQuestion].question}</h3>
+            <div className='w-full h-full'>
+                <h3 className='text-center font-bold text-5xl animate__animated animate__fadeIn animate__delay-3s'>{questions[activeQuestion].question}</h3>
                 {answers.map((answer, idx) => (
                     <li key={idx} onClick={() => onAnswerSelected(answer, idx)} 
                     className={selectedAnswerIndex === idx ? 'li-selected' : 'li-hover'}>
@@ -100,8 +100,12 @@ const QuizBox = () => {
                     Wrong Answers: <span>{result.wrongAnswers}</span>
                 </p>
                 <button onClick={() => window.location.reload()}>Click Here to Play Again</button>
+                <button onClick={() => window.location.reload()}>Click Here to Do The Opposite</button>
             </div>
+            
+            
             )}
+            
         </div>
     </div>
     </div>
