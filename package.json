@@ -19,6 +19,7 @@
     "nodemon": "^2.0.22"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
     "react-scroll": "^1.8.9"
   }
 }

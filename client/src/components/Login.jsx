@@ -4,7 +4,7 @@ import Nuggies from '../assets/nuggies.png'
 
  const Login = () => {
   return (
-    <div className='w-full h-screen flex'>
+    <div name='login' className='w-full h-screen flex'>
         <div className='grid grid-cols-1 md:grid-cols-2 m-auto h-[550px] shadow-lg shadow-gray-800 bg-[#f99cf6] sm:max-w-[900px]'>
             <div className='w-full h-[550px] hidden md:block'>
                 <img className='w-full h-full' src={Nuggies} alt="/" />

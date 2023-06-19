@@ -16,9 +16,6 @@ const RegisterForm = () => {
 
   const handleInputChange = async (e) => {
     const { firstName, value } = e.target;
-    console.log(firstName);
-    console.log(value);
-    console.log('did the state change', playerInfo)
     setPlayerInfo({...playerInfo, [firstName]: value });
   }
   
