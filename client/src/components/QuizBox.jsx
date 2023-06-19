@@ -53,13 +53,14 @@ const QuizBox = () => {
     };
 
     return (
+        <div className='w-full h-screen flex'>
     <div name='quiz' className='container'>
-            <h1>Quiz Page</h1>
+        <h1 className='text-9xl text-center animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent font-black'>Quiz Time</h1>
         <div>
-            <h2>
+            {/* <h2>
                 Question: {activeQuestion + 1}
                 <span>{questions.length}</span>
-            </h2>
+            </h2> */}
         </div>
         <div>
             {!showResult ? (
@@ -102,6 +103,7 @@ const QuizBox = () => {
             </div>
             )}
         </div>
+    </div>
     </div>
     );
 };

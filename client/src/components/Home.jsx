@@ -6,7 +6,7 @@ import 'animate.css';
 const Home = () => {
    
     return (
-        <div name='' className='w-full h-screen bg-pink'>
+        <div name='home' className='w-full h-screen'>
 
 
       {/* Container */}

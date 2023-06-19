@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import { Link } from 'react-scroll'
+
+import Orb from '../assets/orb.png';
 
 import { useMutation } from '@apollo/client';
 import { ADD_PLAYERS } from '../utils/mutations';
@@ -36,48 +39,41 @@ const handleFormSubmit = async (e) => {
   }
 
   return (
-    <section className="container">
-            <div className="row bg-orange-200">
-            <form onSubmit={handleFormSubmit}>
-            <div className="grid gap-6 mb-6 md:grid-cols-2">
-                <div>
-                    <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">First Name</label>
-                    <input type="text" id="firstName" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter First Name" 
-                    name="firstName"
-                    value={playerInfo.firstName}
-                    onChange={handleInputChange}
-                    required />
-                </div>
-                <div>
-                    <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Last Name</label>
-                    <input type="text" id="lastName" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter Last Name" 
-                    name="lastName"
-                    value={playerInfo.lastName}
-                    onChange={handleInputChange}
-                    required />
-                </div>  
-                <div>
-                    <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email</label>
-                    <input type="number" id="email" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter Email Address" 
-                    name="email"
-                    value={playerInfo.email}
-                    onChange={handleInputChange}
-                    required />
-                </div>
-                <div>
-                    <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
-                    <input type="text" id="password" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter Password" 
-                    name="password"
-                    value={playerInfo.password}
-                    onChange={handleInputChange}
-                    required />
-                </div>
-                    <button type="submit" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+    
+
+<div name='register' className='w-full h-screen flex'>
+<div className='grid grid-cols-1 md:grid-cols-2 m-auto h-[550px] shadow-lg shadow-gray-800 bg-[#f99cf6] sm:max-w-[900px]'>
+   
+    <div className='p-4 flex flex-col justify-around'>
+        <form>
+            <h2 className='text-6xl font-bold text-center mb-8  text-[#53e1b9]'>What R U?</h2>
+            <p className='text-3xl font-bold text-center mb-8'>Ugh. Figure It Out.</p>
+            <div>
+                <input className='border p-2 m-2' type="string" placeholder='First Name' />
+                <input className='border p-2 m-2' type="string" placeholder='Last Name' />
+                <input className='border p-2 m-2' type="string" placeholder='Email' />
+                <input className='border p-2 m-2' type="string" placeholder='Password' />
             </div>
-            </form>
-        </div>
-    </section>
+            <Link to='profile' smooth={true} duration={500}>
+            <button className='w-full py-2 my-4 bg-green-600 hover:bg-green-500'>You Just Wanna Be Like Us</button>
+            </Link>
+            
+        </form>
+        <Link to='login' smooth={true} duration={500}>
+        <p className='text-center cursor-pointer'>You're So Confused, Aren't You?  Sign In.</p>
+        </Link>
+    </div>
+    <div className='w-full h-[550px] hidden md:block'>
+        <img className='w-full h-full' src={Orb} alt="/" />
+    </div>
+</div>
+</div>
+
+
+
   );
 };
+
+
 
 export default RegisterForm;

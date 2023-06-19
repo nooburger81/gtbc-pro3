@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-scroll'
 
 import Nuggies from '../assets/nuggies.png'
 
@@ -11,16 +12,20 @@ import Nuggies from '../assets/nuggies.png'
             </div>
             <div className='p-4 flex flex-col justify-around'>
                 <form>
-                    <h2 className='text-6xl font-bold text-center mb-8  text-blue-400'>Whatchoo Know 'Bout Me?</h2>
-                    <p className='text-3xl font-bold text-center mb-8'>A Friendly Quiz Game</p>
+                    <h2 className='text-6xl font-bold text-center mb-8  text-[#53e1b9]'>I Cannot Be Contained</h2>
+                    <p className='text-3xl font-bold text-center mb-8'>Are You A Nuggie?</p>
                     <div>
                         <input className='border p-2 m-2' type="text" placeholder='Username' />
                         <input className='border p-2' type="password" placeholder='Password' />
                     </div>
-                    <button className='w-full py-2 my-4 bg-green-600 hover:bg-green-500'>Sign In</button>
-                    <p className='text-center'>Forgot Username or Password?</p>
+                    <Link to='profile' smooth={true} duration={500}>
+                    <button className='w-full py-2 my-4 bg-green-600 hover:bg-green-500'>Sign In Fellow Nuggie</button>
+                    </Link>
+                    <p className=' cursor-pointer text-center'>Forgot Username or Password? That Sucks For You...</p>
                 </form>
-                <p className='text-center'>Sign Up</p>
+                <Link to='register' smooth={true} duration={500}>
+                <p className='text-center cursor-pointer'>A Nuggie You Are Not. Sign Up?</p>
+                </Link>
             </div>
         </div>
     </div>
