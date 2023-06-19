@@ -56,7 +56,7 @@ const QuizBox = () => {
         <div className='w-full h-screen flex'>
             <div name='quiz' className='container'>
 
-            <h1 class="playful" aria-label="QUIZ TIME!">
+            <h1 id="playful" aria-label="QUIZ TIME!">
                 <span aria-hidden="true">Q</span><span aria-hidden="true">U</span><span aria-hidden="true">I</span><span aria-hidden="true">Z</span><span aria-hidden="true"> </span><span aria-hidden="true">T</span><span aria-hidden="true">I</span><span aria-hidden="true">M</span><span aria-hidden="true">E!</span>
             </h1>
         <div>
@@ -66,7 +66,7 @@ const QuizBox = () => {
                 {answers.map((answer, idx) => (
                     <li key={idx} onClick={() => onAnswerSelected(answer, idx)} 
                     className={selectedAnswerIndex === idx ? 'li-selected' : 'li-hover'}>
-                        <span className='text-4xl font-bold text-pink-400'>{answer}</span>
+                        <span className='text-4xl font-bold text-green-500'>{answer}</span>
                     </li>
                 ))}
                 {checked ? (

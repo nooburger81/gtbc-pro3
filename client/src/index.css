@@ -18,32 +18,32 @@
   @return $value;
 }
 
-.playful span {
+#playful span {
   position: relative;
-  color: #5362F6;
+  color: #f653ba;
   text-shadow: textShadow(0.25, 6, #E485F8);
   animation: scatter 1.75s infinite;
 }
 
-.playful span:nth-child(2n) {
+#playful span:nth-child(2n) {
   color: #ED625C;
   text-shadow: textShadow(0.25, 6, #F2A063);
   animation-delay: 0.3s;
 }
 
-.playful span:nth-child(3n) {
+#playful span:nth-child(3n) {
   color: #FFD913;
   text-shadow: textShadow(0.25, 6, #6EC0A9);
   animation-delay: 0.15s;
 }
 
-.playful span:nth-child(5n) {
+#playful span:nth-child(5n) {
   color: #555BFF;
   text-shadow: textShadow(0.25, 6, #E485F8);
   animation-delay: 0.4s;
 }
 
-.playful span:nth-child(7n), .playful span:nth-child(11n) {
+#playful span:nth-child(7n), .playful span:nth-child(11n) {
   color: #FF9C55;
   text-shadow: textShadow(0.25, 6, #FF5555);
   animation-delay: 0.25s;

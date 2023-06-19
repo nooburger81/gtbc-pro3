@@ -19,6 +19,8 @@ const RegisterForm = () => {
 
   const handleInputChange = async (e) => {
     const { firstName, value } = e.target;
+    console.log(firstName);
+    console.log(value);
     setPlayerInfo({...playerInfo, [firstName]: value });
   }
   
@@ -45,18 +47,33 @@ const handleFormSubmit = async (e) => {
 <div className='grid grid-cols-1 md:grid-cols-2 m-auto h-[550px] shadow-lg shadow-gray-800 bg-[#f99cf6] sm:max-w-[900px]'>
    
     <div className='p-4 flex flex-col justify-around'>
-        <form>
+        <form onSubmit={handleFormSubmit}>
             <h2 className='text-6xl font-bold text-center mb-8  text-[#53e1b9]'>What R U?</h2>
             <p className='text-3xl font-bold text-center mb-8'>Ugh. Figure It Out.</p>
             <div>
-                <input className='border p-2 m-2' type="string" placeholder='First Name' />
-                <input className='border p-2 m-2' type="string" placeholder='Last Name' />
-                <input className='border p-2 m-2' type="string" placeholder='Email' />
-                <input className='border p-2 m-2' type="string" placeholder='Password' />
-                <textarea className='border p-2 m-2 flex items-center' cols="30" rows="3" type='string' placeholder='Write A Little About Yourself'></textarea>
+                <input className='border p-2 m-2' type="string" placeholder='First Name' name="firstName"
+                    value={playerInfo.name}
+                    onChange={handleInputChange}
+                    required />
+                <input className='border p-2 m-2' type="string" placeholder='Last Name'  name="lastName"
+                    value={playerInfo.name}
+                    onChange={handleInputChange}
+                    required/>
+                <input className='border p-2 m-2' type="string" placeholder='Email'  name="email"
+                    value={playerInfo.name}
+                    onChange={handleInputChange}
+                    required/>
+                <input className='border p-2 m-2' type="string" placeholder='Password'  name="password"
+                    value={playerInfo.name}
+                    onChange={handleInputChange}
+                    required/>
+                <textarea className='border p-2 m-2 flex items-center' cols="30" rows="3" type='string' placeholder='Write A Little About Yourself' name="bio"
+                    value={playerInfo.name}
+                    onChange={handleInputChange}
+                    required></textarea>
             </div>
             <Link to='profile' smooth={true} duration={500}>
-            <button className='w-full py-2 my-4 bg-green-600 hover:bg-green-500'>You Just Wanna Be Like Us</button>
+            <button type='submit' className='w-full py-2 my-4 bg-green-600 hover:bg-green-500'>You Just Wanna Be Like Us</button>
             </Link>
             
         </form>

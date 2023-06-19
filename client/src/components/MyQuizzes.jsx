@@ -13,7 +13,7 @@ const MyQuizzes = () => {
           <p className='text-9xl text-right font-bold text-white'>
             My Quizzes
           </p>
-          <p className='text-3xl text-right py-6'>Look At My Beautiful Friends, And They're Beautiful Quizzes.</p>
+          <p className='text-3xl text-right py-6'>Look At My Beautiful Friends, And Their Beautiful Quizzes.</p>
         </div>
 
         
