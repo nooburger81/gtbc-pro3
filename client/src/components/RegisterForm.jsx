@@ -53,6 +53,7 @@ const handleFormSubmit = async (e) => {
                 <input className='border p-2 m-2' type="string" placeholder='Last Name' />
                 <input className='border p-2 m-2' type="string" placeholder='Email' />
                 <input className='border p-2 m-2' type="string" placeholder='Password' />
+                <textarea className='border p-2 m-2 flex items-center' cols="30" rows="3" type='string' placeholder='Write A Little About Yourself'></textarea>
             </div>
             <Link to='profile' smooth={true} duration={500}>
             <button className='w-full py-2 my-4 bg-green-600 hover:bg-green-500'>You Just Wanna Be Like Us</button>

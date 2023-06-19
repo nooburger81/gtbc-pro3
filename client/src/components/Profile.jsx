@@ -2,11 +2,19 @@ import React from 'react'
 import { Link } from 'react-scroll'
 import Brandon from '../assets/mexilovefood.webp'
 
-const Profile = ({ }) => {
+const Profile = () => {
   
   return (
-    <div class="gradient-border">
-    <div name='profile' className='flex flex-col items-center justify-center h-screen'>
+<div name='profile' className='w-full md:h-screen text-yellow-400'>
+      <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
+        <div className='pb-8'>
+          <p className='text-9xl font-bold text-white'>
+            My Profile
+          </p>
+          <p className='text-3xl py-6'>I Made This Page All For You.</p>
+        </div>
+
+    
       <div className="max-w-lg mx-auto my-10 bg-white rounded-lg shadow-md p-5">
         <img className="w-32 h-32 rounded-full mx-auto" src={Brandon} alt="green geometry" />
         <h2 className="text-center text-4xl text-pink-500 font-semibold mt-3"> Brandon Sebastian </h2>
@@ -23,7 +31,7 @@ const Profile = ({ }) => {
       </div>
       </div>
       </div>
-   
+ 
   )
 }
 

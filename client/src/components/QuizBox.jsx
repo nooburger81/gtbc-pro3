@@ -55,7 +55,7 @@ const QuizBox = () => {
     return (
         <div className='w-full h-screen flex'>
     <div name='quiz' className='container'>
-        <h1 className='text-9xl pb-9 text-green-400 animate__animated animate__rollIn'>Quiz Time</h1>
+        <h1 className='text-9xl text-center font-bold text-white'>Quiz Time</h1>
         <div>
             {/* <h2>
                 Question: {activeQuestion + 1}
@@ -65,11 +65,11 @@ const QuizBox = () => {
         <div>
             {!showResult ? (
             <div className='w-full h-full'>
-                <h3 className='text-center font-bold text-5xl animate__animated animate__fadeIn animate__delay-3s'>{questions[activeQuestion].question}</h3>
+                <h3 className='text-center font-bold text-5xl mt-6 animate__animated animate__fadeIn animate__delay-3s'>{questions[activeQuestion].question}</h3>
                 {answers.map((answer, idx) => (
                     <li key={idx} onClick={() => onAnswerSelected(answer, idx)} 
                     className={selectedAnswerIndex === idx ? 'li-selected' : 'li-hover'}>
-                        <span>{answer}</span>
+                        <span className='text-4xl font-bold text-pink-400'>{answer}</span>
                     </li>
                 ))}
                 {checked ? (
