@@ -26,7 +26,7 @@ const coleProfile = () => {
         </div>
         <div className="mt-5">
           <h3 className="text-xl text-center font-semibold">Bio</h3>
-          <p className="text-gray-600 text-2xl text-center">Cole has been ginding hard or hardly grinding since March 2023. He prefers the backend processes of Web Development, but has been known to occasionally enjoy the front end styling of a web page.</p>
+          <p className="text-gray-600 text-2xl text-center">Cole has been grinding hard or hardly grinding since March 2023. He prefers the backend processes of Web Development, but has been known to occasionally enjoy the front end styling of a web page.</p>
         </div>
       </div>
   </div>
