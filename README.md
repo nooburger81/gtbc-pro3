@@ -17,10 +17,12 @@ The team behid this project(GitHub profile links are at the bottom) were motivat
 
 5. Click "Create Fork."
 
-## Here is a sneak peak of the Front Page of Whatchoo Know 'Bout Me:
-
+## Here is a sneak peak of the Front Page of Whatchoo Know 'Bout Me, as well as the link to the deployed app:
 
 ![image](./client/src/assets/whatchooknowboutmeFP.png)
+
+Deployed App---->: https://quiz-people-f3011d575f46.herokuapp.com/
+
 
 # Helpful Links
 - [GitHub](https://github.com)
