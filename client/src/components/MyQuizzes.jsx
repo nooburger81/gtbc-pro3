@@ -10,10 +10,10 @@ const MyQuizzes = () => {
 <div name='myquiz' className='w-full md:h-screen text-yellow-400'>
       <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
         <div className='pb-8'>
-          <p className='text-9xl font-bold text-white'>
+          <p className='text-9xl text-right font-bold text-white'>
             My Quizzes
           </p>
-          <p className='text-3xl py-6'>Look At My Beautiful Friends, And They're Beautiful Quizzes.</p>
+          <p className='text-3xl text-right py-6'>Look At My Beautiful Friends, And They're Beautiful Quizzes.</p>
         </div>
 
         

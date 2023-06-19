@@ -54,18 +54,15 @@ const QuizBox = () => {
 
     return (
         <div className='w-full h-screen flex'>
-    <div name='quiz' className='container'>
-        <h1 className='text-9xl text-center font-bold text-white'>Quiz Time</h1>
-        <div>
-            {/* <h2>
-                Question: {activeQuestion + 1}
-                <span>{questions.length}</span>
-            </h2> */}
-        </div>
+            <div name='quiz' className='container'>
+
+            <h1 class="playful" aria-label="QUIZ TIME!">
+                <span aria-hidden="true">Q</span><span aria-hidden="true">U</span><span aria-hidden="true">I</span><span aria-hidden="true">Z</span><span aria-hidden="true"> </span><span aria-hidden="true">T</span><span aria-hidden="true">I</span><span aria-hidden="true">M</span><span aria-hidden="true">E!</span>
+            </h1>
         <div>
             {!showResult ? (
             <div className='w-full h-full'>
-                <h3 className='text-center font-bold text-5xl mt-6 animate__animated animate__fadeIn animate__delay-3s'>{questions[activeQuestion].question}</h3>
+                <h3 className='text-center font-bold text-5xl animate__animated animate__fadeIn animate__delay-2s'>{questions[activeQuestion].question}</h3>
                 {answers.map((answer, idx) => (
                     <li key={idx} onClick={() => onAnswerSelected(answer, idx)} 
                     className={selectedAnswerIndex === idx ? 'li-selected' : 'li-hover'}>
