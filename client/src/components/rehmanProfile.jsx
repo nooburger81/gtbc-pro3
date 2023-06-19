@@ -5,7 +5,7 @@ import Rehman from '../assets/rehman.png'
 const rehmanProfile = () => {
   
   return (
-<div name='coleProfile' className='w-full md:h-screen text-yellow-400'>
+<div name='rehmanProfile' className='w-full md:h-screen text-yellow-400'>
   <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
       <div className="max-w-lg mx-auto my-10 bg-white rounded-lg shadow-md p-5">
           <img className="w-32 h-32 rounded-full mx-auto" src={Rehman} alt="green geometry" />

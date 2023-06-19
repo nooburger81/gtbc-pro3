@@ -5,7 +5,7 @@ import Brandon from '../assets/mexilovefood.webp'
 const brandonProfile = () => {
   
   return (
-<div name='brandonProfile' className='w-full md:h-screen text-yellow-400'>
+<div name='profile' className='w-full md:h-screen text-yellow-400'>
   <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
     <div className='pb-8'>
           <p className='text-9xl font-bold text-white'>
@@ -26,7 +26,7 @@ const brandonProfile = () => {
         </div>
         <div className="mt-5">
           <h3 className="text-xl text-center font-semibold">Bio</h3>
-          <p className="text-gray-600 text-2xl text-center">Brandon has been skillfully breaking code beyond repair since 2023. He is semi-skilled in JavaScript, React, and Tailwind CSS.</p>
+          <p className="text-gray-600 text-2xl text-center">Brandon has been skillfully breaking code beyond repair since 2023. His favorite past-time is using dry humor to get himself out of awkward situations. He is semi-skilled in JavaScript, React, and Tailwind CSS.</p>
         </div>
       </div>
   </div>
